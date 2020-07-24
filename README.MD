@@ -23,7 +23,7 @@ chmod 777 /usr/local/bin/iterm2-*
 
 ```
 1.第一条
-        Regular expression: rz waiting to receive.\*\*B0100
+        Regular expression: \*\*B0100
         Action: Run Silent Coprocess
         Parameters: /usr/local/bin/iterm2-send-zmodem.sh
         Instant: checked
@@ -33,5 +33,8 @@ chmod 777 /usr/local/bin/iterm2-*
         Parameters: /usr/local/bin/iterm2-recv-zmodem.sh
         Instant: checked
 ```
+在服务器也上要安装 lrzsz 才能使用。
+linux:
+yum install lrzsz -y
 
 ![如图](https://github.com/aikuyun/iterm2-zmodem/blob/master/imgs/01.png)
